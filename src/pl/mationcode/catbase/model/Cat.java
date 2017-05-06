@@ -9,6 +9,7 @@ public class Cat {
 	Date born;
 	Float weight;
 	String ownerName;
+
 	static Scanner sc=new Scanner(System.in);
 	public
 	String giveInfo(){
@@ -17,10 +18,19 @@ public class Cat {
 	}
 	static String getUserInput(){
 	 
-		return sc.nextLine();
-		
-		
-		
+		return sc.nextLine();		
+	}
+	String getOwnerName() {
+		return ownerName;
+	}
+	void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+	String getName() {
+		return name;
+	}
+	void setName(String name) {
+		this.name = name;
 	}
 
 }
